@@ -89,13 +89,12 @@
             value: function render() {
                 return _react2.default.createElement(
                     'div',
-                    { className: this.props.classNames, id: this.props.id, style: this.props.styles },
+                    { className: this.props.classNames, id: this.props.id, style: this.props.styles, onClick: this.props.handleClose },
                     _react2.default.createElement(
                         'div',
                         { className: 's-alert-box-inner' },
                         this.props.message
-                    ),
-                    _react2.default.createElement('span', { className: 's-alert-close', onClick: this.props.handleClose })
+                    )
                 );
             }
         }]);
